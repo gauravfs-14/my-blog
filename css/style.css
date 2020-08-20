@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@600&display=swap');
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+    
+}
+body{
+    background-color: rgb(236, 231, 223)
+}
+.container{
+    background:rgb(34, 33, 33) ;
+    height: 70px;
+    display: flex;
+    position: relative;
+    width: 100%;
+}
+.logo{
+    float: left;
+    margin: 7px;
+    display: flex;
+    width: 60px;
+    margin-right: auto;
+}
+.logo img{
+    width: 50px;
+    height: 50px;
+    border: 2px solid white;
+    border-radius: 100%;
+}
+.navigation nav{
+    float:right;
+    margin: 7px;
+    display: flex;
+}
+.navigation nav ul{
+    display:flex;
+    margin: 10px;
+}
+.navigation nav ul li{
+    list-style: none;
+    margin-left: 40px;
+    font-size: 1.3rem;
+    display:inline-flex;
+}
+.navigation nav ul li a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-family: 'Baloo Tamma 2', cursive;
+}
+a.links-nav
+{
+    position: relative;
+}
+
+a.links-nav:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color:  rgb(161, 240, 109);
+  visibility: hidden;
+  transition: all 0.4s ease-in-out;
+}
+a.links-nav:hover:before {
+    visibility: visible;
+    width: 100%;
+  }
+  .fa-bars{
+    display: none;
+    visibility: hidden;
+    cursor: pointer;
+}
+.home{
+    background: linear-gradient(rgba(0,0 ,0 ,0.8 ),rgba(0, 0, 0, 0.6)),url(../images/background.jpg);
+    height: 100vh;
+    width: 100%;
+    background-attachment: fixed;
+    
+}
+p.typing-effect {
+    border-right: solid 3px rgb(16, 17, 16);
+    white-space: nowrap;
+    overflow: hidden;    
+    font-family: 'Baloo Tamma 2', cursive;  
+    font-size: 2rem;
+    color: rgb(161, 240, 109);
+    margin: 0 auto;
+    cursor: text;
+  }
+  
+  p.typing-effect {
+    animation: animated-text 4s steps(29,end) 1s 1 normal both,
+               animated-cursor 600ms steps(29,end) infinite;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes animated-text{
+    from{width: 0;}
+    to{width: 20rem;}
+  }
+
+  @keyframes animated-cursor{
+    from{border-right-color: rgba(0,255,0,.75);}
+    to{border-right-color: transparent;}
+  }
+.home h1,h2{
+    font-family: 'Baloo Tamma 2', cursive;
+    color: whitesmoke;
+    font-size: 3rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-left: auto;
+}
+.home h1{
+    padding-top: 10%;
+}
+.social-media{
+    font-family: 'Baloo Tamma 2', cursive;
+    color: whitesmoke;
+    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-left: auto;
+    margin-top: 60px;
+    
+}
+.fa{
+    color: white;
+    padding: 0 25px;
+    transition-duration: 1s;
+}
+.fa-facebook:hover{
+    color:#3b5998;
+    font-size: 1.7rem;
+}
+.fa-instagram:hover{
+    color:  #c4246e;
+    font-size: 1.7rem;
+}
+.fa-twitter:hover{
+    color:  #00acee;
+    font-size: 1.7rem;
+}
+.fa-youtube:hover{
+    color: #FF0000;
+    font-size: 1.7rem;
+}
+.nav-items{
+    display: flex;
+}
+.about-sec{
+    font-family: 'Baloo Tamma 2', cursive; 
+    height: 86vh;
+    display: flex;
+    background-color: rgb(236, 231, 223);
+}
+.about-sec img{
+    height: 60%;
+    width: 55%;
+    margin-left: 20%;
+    border-radius: 10px;
+    margin-top: 12%;
+}
+h3{
+    align-items: center;
+    text-align: center;
+    font-size: 3em;
+    font-family: 'Baloo Tamma 2', cursive; 
+    background-color: rgb(236, 231, 223);
+}
+
+.about{
+    font-family: 'Baloo Tamma 2', cursive; 
+}
+.about h2{
+    color:rgba(3, 136, 3, 0.75) ;
+    align-items: center;
+    justify-content: center;
+    margin-top: 16%;
+    width: 85%;
+    margin-right: 15%;
+}
+.about p{
+    align-items: center;
+    justify-content: left;
+    width: 85%;
+    flex: 1;
+    font-family: 'Lobster', cursive;
+   font-size: 1.2em;
+    
+}
+.img{
+    width: 50%;
+}
+.skills{
+    height: 86vh;
+    background-color: rgb(236, 231, 223);
+}
+.skills h2{
+    color:rgba(3, 136, 3, 0.75) ;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2%;
+    width: 100%;
+    margin-right: 15%;
+    
+}
+.skills p{
+    align-items: center;
+    justify-content: center;
+    width: 85%;
+    font-family: 'Lobster', cursive;
+   font-size: 1.2em;
+    padding-left: 20%;
+    margin-bottom: 3vh;
+}
+  .skills__data{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    font-family: 'Baloo Tamma 2', cursive; 
+    padding: .5rem 1rem;
+    width: 60%;
+    border-radius: .5rem;
+    box-shadow: 0 4px 25px rgba(14,36,49,.15);
+    margin-bottom: 5vh;
+    margin-left: 20%;
+    overflow: hidden;
+  }
+  .skills__icon{
+    font-size: 2rem;
+    margin-right: 2rem;
+    color: rgba(3, 136, 3, 0.75);
+  }
+  .skills__names{
+    display: flex;
+    align-items: center;
+  }
+  .skills__bar{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(3, 136, 3, 0.75);
+    height: .25rem;
+    border-radius: .5rem;
+  }
+  .skills__html{
+    width: 95%;
+  }
+  .skills__css{
+    width: 85%;
+  }
+  .skills__js{
+    width: 50%;
+  }
+  .skills__ux{
+    width: 85%;
+  }
+  .skills__img{
+    border-radius: .5rem;
+  }
+  .contact{
+      height: 86vh;
+  }
+  #text{
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-bottom: 2vh;
+    height: 10vh;
+    padding:1%;
+    font-family: 'Baloo Tamma 2', cursive; 
+    font-size: 1.4em;
+    border-radius: .5rem;
+    background-color: rgb(236, 231, 224);
+  }
+  #email{
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-bottom: 2vh;
+    height: 10vh;
+    padding:1%;
+    font-family: 'Baloo Tamma 2', cursive; 
+    font-size: 1.4em;
+    border-radius: .5rem;
+    background-color: rgb(236, 231, 224);
+}
+#msg{
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-bottom: 2vh;
+    height: 40vh;
+    padding:1%;
+    font-family: 'Baloo Tamma 2', cursive; 
+    font-size: 1.4em;
+    border-radius: .5rem;
+    background-color: rgb(236, 231, 224);
+}
+.submit-btn{
+    font-size: 1em;
+    border-radius: .5rem;
+    background-color: rgb(236, 231, 224);
+    padding:1%;
+    margin-left: 25%;
+    margin-right: 25%;
+    width: 10%;
+    transition-duration: 1s;
+}
+footer{
+    background:rgb(34, 33, 33) ;
+    height: 110px;
+}
+footer p{
+    font-family: 'Baloo Tamma 2', cursive;
+    color: whitesmoke;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: rgba(3, 136, 3, 0.75); /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 5px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+  }
+  
+  #myBtn:hover {
+    background-color: rgb(34, 33, 33); /* Add a dark-grey background on hover */
+    transition-duration: 1s;
+  }
+.submit-btn:hover{
+    background-color: rgba(3, 136, 3, 0.75);
+    
+}
+::-webkit-scrollbar {
+	width: 3px;
+	height: 10px;
+}
+
+::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 5px grey; 
+	border-radius: 8px;
+	height: 40px;
+  }
+
+::-webkit-scrollbar-thumb {
+	background: rgba(3, 136, 3, 0.75); 
+	border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: rgb(34, 33, 33); 
+}
